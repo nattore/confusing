@@ -73,7 +73,7 @@ Diagrams:
 Links:
 - Use relative paths ('./', '../')
 - Absolute paths (starting with '/') resolves to content's root folder ("/docs")
-- Autolinks (<url>) are unsupported
+- Autolinks (\<url\>) are unsupported
 - Prioritize fixing content's file links (accessed with './assets/file')
 - Links to other pages to be fixed needs updated urls ('../other_page' or '/path/to/page')
 - Links to global files needs the files to be resolved ('@site/src/img/logo.png')
@@ -93,7 +93,7 @@ Nested tables:
 
 Content formatting:
 - Proper indented lists
-- Proper formatted text (*bold*, _italics_, etc)
+- Proper formatted text (**bold**, _italics_, etc)
 
 Front matter custom section:
 - Follow the naming convention
