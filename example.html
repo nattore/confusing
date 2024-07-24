@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+        th, td {
+            width: 100px;
+        }
+        .nested-table {
+            width: 100%;
+        }
+        .nested-table th, .nested-table td {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Table 1</h2>
+<table>
+    <!-- Outer Table 1 -->
+    <tbody>
+        <!-- Rows of Outer Table 1 -->
+        <tr>
+            <td>Main 1-1</td>
+            <td>Main 1-2</td>
+            <td>Main 1-3</td>
+            <td>Main 1-4</td>
+            <td>Main 1-5</td>
+        </tr>
+        <tr>
+            <td>Main 2-1</td>
+            <td>Main 2-2</td>
+            <td>
+                <!-- Nested Table 1-1 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 1-1-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 1-1-1-1</td>
+                                    <td>Nested 1-1-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 1-1-1-3</td>
+                                    <td>Nested 1-1-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 1-1-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 1-2-1</td>
+                        <td>
+                            <!-- Nested Table 1-1-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 1-1-2-1</td>
+                                    <td>Nested 1-1-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 1-1-2-3</td>
+                                    <td>Nested 1-1-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 1-3-1</td>
+                        <td>Nested 1-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- Nested Table 1-2 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 1-2-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 1-2-1-1</td>
+                                    <td>Nested 1-2-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 1-2-1-3</td>
+                                    <td>Nested 1-2-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 1-2-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-2-1</td>
+                        <td>
+                            <!-- Nested Table 1-2-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 1-2-2-1</td>
+                                    <td>Nested 1-2-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 1-2-2-3</td>
+                                    <td>Nested 1-2-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-3-1</td>
+                        <td>Nested 2-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Main 2-3</td>
+        </tr>
+        <tr>
+            <td>Main 3-1</td>
+            <td>Main 3-2</td>
+            <td>Main 3-3</td>
+            <td>Main 3-4</td>
+            <td>Main 3-5</td>
+        </tr>
+        <tr>
+            <td>Main 4-1</td>
+            <td>Main 4-2</td>
+            <td>Main 4-3</td>
+            <td>Main 4-4</td>
+            <td>Main 4-5</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table 2</h2>
+<table>
+    <!-- Outer Table 2 -->
+    <tbody>
+        <!-- Rows of Outer Table 2 -->
+        <tr>
+            <td>Main 1-1</td>
+            <td>Main 1-2</td>
+            <td>Main 1-3</td>
+            <td>Main 1-4</td>
+            <td>Main 1-5</td>
+        </tr>
+        <tr>
+            <td>Main 2-1</td>
+            <td>Main 2-2</td>
+            <td>
+                <!-- Nested Table 2-1 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 2-1-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 2-1-1-1</td>
+                                    <td>Nested 2-1-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 2-1-1-3</td>
+                                    <td>Nested 2-1-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 2-1-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-2-1</td>
+                        <td>
+                            <!-- Nested Table 2-1-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 2-1-2-1</td>
+                                    <td>Nested 2-1-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 2-1-2-3</td>
+                                    <td>Nested 2-1-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-3-1</td>
+                        <td>Nested 2-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- Nested Table 2-2 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 2-2-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 2-2-1-1</td>
+                                    <td>Nested 2-2-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 2-2-1-3</td>
+                                    <td>Nested 2-2-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 2-2-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-2-1</td>
+                        <td>
+                            <!-- Nested Table 2-2-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 2-2-2-1</td>
+                                    <td>Nested 2-2-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 2-2-2-3</td>
+                                    <td>Nested 2-2-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 2-3-1</td>
+                        <td>Nested 2-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Main 2-3</td>
+        </tr>
+        <tr>
+            <td>Main 3-1</td>
+            <td>Main 3-2</td>
+            <td>Main 3-3</td>
+            <td>Main 3-4</td>
+            <td>Main 3-5</td>
+        </tr>
+        <tr>
+            <td>Main 4-1</td>
+            <td>Main 4-2</td>
+            <td>Main 4-3</td>
+            <td>Main 4-4</td>
+            <td>Main 4-5</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table 3</h2>
+<table>
+    <!-- Outer Table 3 -->
+    <tbody>
+        <!-- Rows of Outer Table 3 -->
+        <tr>
+            <td>Main 1-1</td>
+            <td>Main 1-2</td>
+            <td>Main 1-3</td>
+            <td>Main 1-4</td>
+            <td>Main 1-5</td>
+        </tr>
+        <tr>
+            <td>Main 2-1</td>
+            <td>Main 2-2</td>
+            <td>
+                <!-- Nested Table 3-1 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 3-1-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 3-1-1-1</td>
+                                    <td>Nested 3-1-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 3-1-1-3</td>
+                                    <td>Nested 3-1-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 3-1-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 3-2-1</td>
+                        <td>
+                            <!-- Nested Table 3-1-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 3-1-2-1</td>
+                                    <td>Nested 3-1-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 3-1-2-3</td>
+                                    <td>Nested 3-1-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 3-3-1</td>
+                        <td>Nested 3-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- Nested Table 3-2 -->
+                <table class="nested-table">
+                    <tr>
+                        <td>
+                            <!-- Nested Table 3-2-1 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 3-2-1-1</td>
+                                    <td>Nested 3-2-1-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 3-2-1-3</td>
+                                    <td>Nested 3-2-1-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nested 3-2-2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 3-2-1</td>
+                        <td>
+                            <!-- Nested Table 3-2-2 -->
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Nested 3-2-2-1</td>
+                                    <td>Nested 3-2-2-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested 3-2-2-3</td>
+                                    <td>Nested 3-2-2-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nested 3-3-1</td>
+                        <td>Nested 3-3-2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Main 2-3</td>
+        </tr>
+        <tr>
+            <td>Main 3-1</td>
+            <td>Main 3-2</td>
+            <td>Main 3-3</td>
+            <td>Main 3-4</td>
+            <td>Main 3-5</td>
+        </tr>
+        <tr>
+            <td>Main 4-1</td>
+            <td>Main 4-2</td>
+            <td>Main 4-3</td>
+            <td>Main 4-4</td>
+            <td>Main 4-5</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
